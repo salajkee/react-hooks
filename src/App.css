@@ -2,37 +2,139 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ChangeName {
+  margin: 100px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ChangePosition {
+  margin: 0 50px;
+  padding: 200px 0;
+  border: 1px solid rgb(15, 139, 247);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ChangeColor {
+  padding: 200px 0;
+}
+
+.changeColor__value {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.changeColor__select {
+  font-size: 20px;
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.counter__wrapper {
+  width: 350px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(44, 44, 53);
+}
+
+.counter__wrapper > h1 {
+  font-size: 36px;
+  color: rgb(255, 225, 0);
+}
+
+.counter__wrapper > p {
+  font-size: 16px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.counter__btns {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter__btn,
+.counter__reset-btn {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(0, 157, 255);
+}
+
+.counter__reset-btn {
+  grid-column: 1/3;
+}
+
+.add-item {
+  min-height: 60vh;
+}
+
+.list {
+  width: 300px;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.list-item {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid gray;
+  text-align: left;
+  cursor: pointer;
+}
+
+.add-item__btn {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(0, 157, 255);
+}
+
+.time {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px 25px;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+.time > span {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  background-color: gray;
+}
+
+.toggle {
+  width: 500px;
+  margin: 0 auto;
+  min-height: 60vh;
+  padding: 100px 0;
+}
+
+.toggle__btn {
+  width: 500px;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: lightgreen;
+}
+
+.toggle__content {
+  padding: 25px;
+  background-color: lightblue;
 }
